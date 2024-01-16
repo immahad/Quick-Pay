@@ -6,7 +6,7 @@ Welcome to Quick-Pay, a simple HTML payment form designed to collect user detail
 
 - **Introduction**
 - **Features**
-- **Usage**
+- **How to Use**
 - **Contribution**
 
 ## Introduction
