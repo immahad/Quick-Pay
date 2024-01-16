@@ -37,3 +37,5 @@ git clone https://github.com/your-username/Payment-Gateway.git
 ## Contribution
 
 Contributions are welcome! If you have any ideas for improvements, feature requests, or bug reports, feel free to open an issue or submit a pull request.
+
+![Image Alt text](Quick-Pay.png)
