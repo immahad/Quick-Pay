@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>web payment</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Payment Form</h1>
+      <h2>Contact Information</h2>
+      <p>Name: <input type="text" name="name" id="name" required /></p>
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male:
+          <input type="radio" name="gender" id="male" required /> Female<input
+            type="radio"
+            name="gender"
+            id="female"
+            required
+          />
+        </p>
+      </fieldset>
+      <p>Address: <textarea cols="50" rows="7"></textarea></p>
+      <p>Email: <input type="email" name="email" id="email" required /></p>
+      <p>
+        Pin Code:
+        <input type="password" name="pin_code" id="pin_code" required />
+      </p>
+      <h2>Payment Details</h2>
+      <p>
+        Card Type:
+        <select name="card_type" id="card_type" required>
+          <option value="">---select a card type---</option>
+          <option value="visa">Visa</option>
+          <option value="mastercard">Master Card</option>
+          <option value="paypak">PayPak</option>
+          <option value="1link">1Link</option>
+        </select>
+      </p>
+      <p>
+        Card Number:
+        <input type="number" name="cardnumber" id="cardnumber" required />
+      </p>
+      <p>
+        Epiration Date:
+        <input type="date" name="exp_date" id="exp_date" required />
+      </p>
+      <p>CVV: <input type="password" name="cvv" id="cvv" required /></p>
+      <input type="submit" value="Pay Now" />
+    </form>
+  </body>
+</html>
