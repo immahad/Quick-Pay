@@ -1,6 +1,6 @@
-# Payment-Gateway
+# Quick-Pay
 
-Welcome to Payment-Gateway, a simple HTML payment form designed to collect user details and card information for processing online payments.
+Welcome to Quick-Pay, a simple HTML payment form designed to collect user details and card information for processing online payments.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Welcome to Payment-Gateway, a simple HTML payment form designed to collect user 
 
 ## Introduction
 
-This project, Payment-Gateway, provides a straightforward payment form created in HTML. It is designed to seamlessly collect essential user information and card details for online transactions. The form includes sections for contact information and payment details, ensuring a user-friendly experience.
+This project, Quick-Pay, provides a straightforward payment form created in HTML. It is designed to seamlessly collect essential user information and card details for online transactions. The form includes sections for contact information and payment details, ensuring a user-friendly experience.
 
 ## Features
 
