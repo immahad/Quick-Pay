@@ -3,17 +3,98 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>web payment</title>
+    <title>Quick Pay</title>
+    <style>
+      * {
+        box-sizing: content-box;
+      }
+
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 30px;
+        padding: 8px;
+        font-size: 20px;
+      }
+
+      .container {
+        background-color: rgb(243, 240, 236);
+        padding: 5px 25px 15px 20px;
+        border: 2px solid rgb(188, 227, 220);
+        border-radius: 4px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"],
+      input[type="date"],
+      select {
+        width: 100%;
+      }
+
+      input[type="date"],
+      input[type="submit"],
+      select {
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+        text-shadow: 3px 2px 3px rgb(64, 152, 136);
+      }
+
+      textarea {
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: lightgreen;
+        padding: 8px;
+        width: 99%;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        background-color: darkcyan;
+        color: white;
+      }
+
+      #rev a {
+        box-sizing: content-box;
+        padding: 5px;
+        color: red;
+        font-size: small;
+        background-color: rgba(152, 175, 168, 0.436);
+      }
+
+      #rev a:hover {
+        color: rgba(8, 57, 54, 0.829);
+        background-color: rgb(244, 166, 205);
+      }
+      span .img {
+        border-radius: 5px;
+      }
+
+      #req {
+        color: red;
+        font-size: medium;
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
   </head>
   <body>
-    <form action="">
+    <form action="" class="container">
       <h1>Payment Form</h1>
+      <hr />
+      <p id="req">Require Fields*</p>
       <h2>Contact Information</h2>
-      <p>Name: <input type="text" name="name" id="name" required /></p>
+      <p>
+        Name*
+        <input type="text" name="name" id="name" required placeholder="Maanu" />
+      </p>
       <fieldset>
-        <legend>Gender</legend>
+        <legend>Gender*</legend>
         <p>
-          Male:
+          Male
           <input type="radio" name="gender" id="male" required /> Female<input
             type="radio"
             name="gender"
@@ -22,32 +103,77 @@
           />
         </p>
       </fieldset>
-      <p>Address: <textarea cols="50" rows="7"></textarea></p>
-      <p>Email: <input type="email" name="email" id="email" required /></p>
       <p>
-        Pin Code:
-        <input type="password" name="pin_code" id="pin_code" required />
+        Address
+        <textarea cols="50" rows="7" placeholder="Enter the address"></textarea>
+      </p>
+      <p>
+        Email* <br /><input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="maanu.546@gmail.com"
+        />
+      </p>
+      <p>
+        Pin Code*<br />
+        <input
+          type="password"
+          name="pin_code"
+          id="pin_code"
+          required
+          placeholder="1234"
+        />
       </p>
       <h2>Payment Details</h2>
       <p>
-        Card Type:
+        Card Type*<br />
+        <span
+          ><img src="visa.jpg" width="50px" height="32px" class="img" /><img
+            src="1Link-1.jpg"
+            width="50px"
+            height="31px"
+            class="img"
+          /><img src="cards.jpg" width="50px" height="31px" class="img" /><img
+            src="paypallogo.png"
+            width="50px"
+            height="31px"
+            class="img"
+          />
+        </span>
         <select name="card_type" id="card_type" required>
           <option value="">---select a card type---</option>
           <option value="visa">Visa</option>
           <option value="mastercard">Master Card</option>
-          <option value="paypak">PayPak</option>
+          <option value="paypal">PayPal</option>
           <option value="1link">1Link</option>
         </select>
       </p>
       <p>
-        Card Number:
-        <input type="number" name="cardnumber" id="cardnumber" required />
+        Card Number*<br />
+        <input
+          type="number"
+          name="cardnumber"
+          id="cardnumber"
+          required
+          placeholder="1234-5678-9101-1213"
+        />
       </p>
       <p>
-        Epiration Date:
+        Epiration Date*<br />
         <input type="date" name="exp_date" id="exp_date" required />
       </p>
-      <p>CVV: <input type="password" name="cvv" id="cvv" required /></p>
+
+      <p>
+        CVV*<br />
+        <input type="password" name="cvv" id="cvv" required placeholder="123" />
+      </p>
+      <span id="rev">
+        <a href="#">Review the Details</a>
+      </span>
+      <br />
+      <br />
       <input type="submit" value="Pay Now" />
     </form>
   </body>
