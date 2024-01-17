@@ -1,6 +1,6 @@
 # Quick-Pay
 
-Welcome to Quick-Pay, a simple HTML payment form designed to collect user details and card information for processing online payments.
+Welcome to Quick-Pay, a simple HTML and CSS payment form designed to collect user details and card information for processing online payments.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Welcome to Quick-Pay, a simple HTML payment form designed to collect user detail
 
 ## Introduction
 
-This project, Quick-Pay, provides a straightforward payment form created in HTML. It is designed to seamlessly collect essential user information and card details for online transactions. The form includes sections for contact information and payment details, ensuring a user-friendly experience.
+This project, Quick-Pay, provides a straightforward payment form created in HTML and CSS. It is designed to seamlessly collect essential user information and card details for online transactions. The form includes sections for contact information and payment details, ensuring a user-friendly experience.
 
 ## Features
 
